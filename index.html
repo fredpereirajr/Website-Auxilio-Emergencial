@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxílio Emergencial 2021</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration:none;
+            
+        }
+
+        @font-face {  /*Fonte externa.*/
+            font-family: 'futura-lt-book';
+            src: url('FuturaLT-Book.ttf') format('truetype');
+            font-style: normal;
+        }
+
+        body {
+            
+            background-color: black;
+        }
+
+        .menu {
+            height: 460px;
+            width: 100%;
+            background-color: black;
+        }
+
+        .conteiner {      
+           margin-left: 120px;
+           position: relative;  
+           bottom: 260px;
+           height: 400px;
+           
+       }
+
+        .menu h1 {
+            font-weight: normal;  /*Configurando a fonte para ficar do jeito original. */
+            width: 60%;
+            font-size: 4.609rem; /*rem é bom para responsividade, pois é um tamanho acumulativo*/
+            color: #fff;
+            font-family:'futura-lt-book';
+            letter-spacing:-.035em;    
+        }
+
+        .separator {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .breadcrumb {
+            font-family: 'futura-lt-book';
+            color: #fff;
+            padding: 0px 0px 10px 0px
+            
+        }
+
+        .description {
+            font-family: 'futura-lt-book';
+            color: #fff;
+            font-size: 1.2rem;
+            width: 527px;
+          
+        }
+
+        .foto-auxilio-2021 {
+            position: absolute;
+            right: 5%;
+            top: 195px;
+        }
+
+        .background-menu {
+            width: 100%;  /*Esses 100% é sobre o a largura DECLARADA do ascendente mais prox */
+            height: 100%; /*Esses 100% é sobre o a largura DECLARADA do ascendente mais prox  */
+        }
+    
+    </style>
+</head>
+
+<body link = "#fff" vlink = "#fff"> <!--Muda a cor do link e a cor dele pós visita.-->
+    <header class="menu">
+        <img src="imagens/bg_institucionalInterno.jpg" class = "background-menu" alt="background">
+        <img src="imagens/auxilio_2021.png"class = "foto-auxilio-2021" alt="Auxílio Emergencial 2021">
+
+        <div class="conteiner">
+            <p class="breadcrumb" >
+                <span><a href="">Início</a></span>
+                <span class = "separator" >›</span>
+                <span><a href="" >Auxílio Emergencial</a></span>
+                <span class = "separator" >›</span>
+                <span>Auxílio Emergencial 2021</span>
+            </p>
+            <h1>Auxílio Emergencial 2021</h1>   
+            <div class="description">
+                <p>U​m suporte financeiro do Governo Federal para trabalhadores informais.
+                <br>
+                <strong>CAIXA. O banco de todos os brasileiros.</strong> 
+                </p>
+            </div>
+        </div>
+    
+       
+        
+    </header>
+    
+</body>
+</html>

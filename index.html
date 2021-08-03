@@ -12,6 +12,10 @@
             box-sizing: border-box;
             list-style: none;
             text-decoration:none;
+        }
+
+        li {
+            display: inline-block;
             
         }
 
@@ -22,30 +26,80 @@
         }
 
         body {
-            
+            width: 100%;
+            height: 100%;
             background-color: black;
         }
 
         .menu {
+            font-family: 'futura-lt-book';
+            color: #fff;
+            background-image: url(imagens/bg_institucionalInterno.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; /*é o que faz o background ficar com width 100% */
             height: 460px;
-            width: 100%;
-            background-color: black;
+        }
+
+        .nav-main {
+            background-color: rgba(0, 255, 255, 0);
+            height: 139px;
+            margin-left: 113px;
+            width: 1714px;
+        }
+
+        .nav-one {
+            width: 1642px;
+            height: 50px;
+            padding: 30px 0px 0px 0px;
+        }
+
+        .nav-list1 a {
+            font-family: sans-serif;
+            font-size:1.1em;     
+        }
+
+        .divisor {
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 18px;
+            border-left: 2px solid #f7941e;
+            
+        }
+
+        .divisor-esp {
+            margin-left: 16px;
+            margin-right:13px;
+            height: 18px;
+            border-left: 2px solid #f7941e;
+        }
+
+        .nav-list2, .nav-list3{
+            position: absolute;
+            right: 5%;
+            top: 30px;
+        }
+
+        .nav-list2 a {
+            font-size: 13px;
+        }
+
+        .caixa-libra {
+            width: 200px;
+            height: 200px;
+            background-image:url(imagens/libras.png);
+            background-size: cover;
         }
 
         .conteiner {      
            margin-left: 120px;
            position: relative;  
-           bottom: 260px;
-           height: 400px;
-           
+           height: 400px;           
        }
 
         .menu h1 {
             font-weight: normal;  /*Configurando a fonte para ficar do jeito original. */
             width: 60%;
             font-size: 4.609rem; /*rem é bom para responsividade, pois é um tamanho acumulativo*/
-            color: #fff;
-            font-family:'futura-lt-book';
             letter-spacing:-.035em;    
         }
 
@@ -55,15 +109,11 @@
         }
 
         .breadcrumb {
-            font-family: 'futura-lt-book';
-            color: #fff;
             padding: 0px 0px 10px 0px
             
         }
 
-        .description {
-            font-family: 'futura-lt-book';
-            color: #fff;
+        .description { 
             font-size: 1.2rem;
             width: 527px;
           
@@ -75,18 +125,62 @@
             top: 195px;
         }
 
-        .background-menu {
-            width: 100%;  /*Esses 100% é sobre o a largura DECLARADA do ascendente mais prox */
-            height: 100%; /*Esses 100% é sobre o a largura DECLARADA do ascendente mais prox  */
-        }
+       
     
     </style>
 </head>
 
 <body link = "#fff" vlink = "#fff"> <!--Muda a cor do link e a cor dele pós visita.-->
     <header class="menu">
-        <img src="imagens/bg_institucionalInterno.jpg" class = "background-menu" alt="background">
         <img src="imagens/auxilio_2021.png"class = "foto-auxilio-2021" alt="Auxílio Emergencial 2021">
+
+        <nav class = "nav-main" >
+
+            <nav class = "nav-one" >
+                <ul class="nav-list1" >
+                    <li>
+                        <span class = "divisor"></span>
+                        <strong><a href="">Você</a></strong> 
+                        <span class = "divisor"></span>
+                    </li>
+                    <li>
+                        <strong><a href="">Empresa</a></strong>
+                        <span class = "divisor-esp"></span>
+                    </li>
+                    <li>
+                        <strong><a href="">Investimentos</a></strong>           
+                        <span class = "divisor-esp"></span>
+                    </li>
+                    <li>
+                        <strong><a href="">Open Banking</a></strong>      
+                        <span class = "divisor-esp"></span>
+                    </li>
+                </ul>
+                <ul class = "nav-list2" >
+                    <li> <a href="">Transferência</a> </li>
+                    <li> <a href="">Downloads</a> </li>
+                    <li> <a href="">Sobre a CAIXA</a></li>
+                    <li> <a href="">RI</a></li>
+                    <li> <a href="">/EN</a></li>
+                </ul>
+                <ul  class = "nav-list3" >
+                    <li><a href="" class="caixa-libra" ></a></li>
+                    <li><a href="" class="caixa-integrado" ></a></li>
+                    <li><a href="" class="caixa-info"></a></li>
+                </ul>
+
+
+            </nav>
+
+            <nav class = "nav-two" >
+
+            </nav>
+
+            <div class = "login" >
+
+            </div>
+
+        </nav>
 
         <div class="conteiner">
             <p class="breadcrumb" >

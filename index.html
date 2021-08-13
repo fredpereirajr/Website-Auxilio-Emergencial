@@ -28,7 +28,7 @@
         body {
             width: 100%;
             height: 100%;
-            background-color: black;
+            background-color: rgb(184, 11, 11);
         }
 
         .menu {
@@ -39,19 +39,33 @@
             background-size: cover; /*é o que faz o background ficar com width 100% */
             height: 460px;
         }
+        
 
         .nav-main {
             background-color: rgba(0, 255, 255, 0);
             height: 139px;
             margin-left: 113px;
             width: 1714px;
+           
+        }
+
+        .logo {
+           position: absolute;
+           left: 12.28px;
         }
 
         .nav-one {
-            width: 1642px;
-            height: 50px;
+            position: relative;
+            left: -6px;
+            background-color: #0065b7;
+            width: 525px;
+            height: 100px;
             padding: 30px 0px 0px 0px;
         }
+
+
+       
+        
 
         .nav-list1 a {
             font-family: sans-serif;
@@ -73,26 +87,83 @@
             border-left: 2px solid #f7941e;
         }
 
-        .nav-list2, .nav-list3{
+        .nav-two  {
+            font-size: 13px;
+            font-family:sans-serif;
+            top: 20px;
+            width: 535px;
             position: absolute;
             right: 5%;
-            top: 30px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
         }
 
-        .nav-list2 a {
-            font-size: 13px;
+        .nav-two li {
+            margin-left: 7px;
+            margin-right: 7px;
         }
 
-        .caixa-libra {
-            width: 200px;
-            height: 200px;
-            background-image:url(imagens/libras.png);
-            background-size: cover;
+        .RI-corrigir {
+            margin-right: 0px !important;
+        }
+
+        .EN-corrigir {
+            margin-left: 0px !important;
+        }
+
+        .caixa-integrado img {
+            width: 33px;
+            height: 33px;
+        }
+
+        .caixa-info img {
+            width: 79px;
+            height: 33px;
+        }
+
+        .nav-three {
+            background-color: #0065b7;
+            position: relative;
+            left: -6px;
+            bottom: 2px;
+            font-size: 16px;
+            padding: 0px 0px 0px 30px;
+            box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.212);
+            width: 565px;
+            height: 30px;  
+        }
+
+        .bold {
+            font-weight:bold
+        }
+
+        .nav-three a {
+            opacity: 0.7;
+        }
+
+        .nav-three li {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .arrow::after{
+        
+            margin-left: 5px;
+            width: 10px;
+            height: 10px;
+            content: '';
+            background-image: url(imagens/bl_arrowMenuHome.png);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 4px;
+            display: inline-block;
         }
 
         .conteiner {      
            margin-left: 120px;
            position: relative;  
+           top: 60px;
            height: 400px;           
        }
 
@@ -119,6 +190,75 @@
           
         }
 
+        .login {
+            display: inline-block;
+        }
+
+        .login a {
+            width: 205px;
+            height: 44px;
+            padding: 11px 0px 0px 21.5px;
+            display: block;
+            border-radius: 3px;
+            background-color: #f7941e;  
+        }
+
+        /*Não consegui escurecer o botão... */
+        .login a:focus{
+            box-shadow: inset 0.5px 0.5px 2px #000000;
+        }
+
+        .login a:hover {
+            background-color: #ff9f2b;
+        }
+
+        .busca {
+            border-bottom: 1px solid #ffffff;
+            display: inline-block;
+            min-width: 284px;
+            border-radius: none;
+            margin-right: 100px;
+            padding: 0px 0px 10px 20px;
+            align-items: center;
+        }
+
+        input {
+            font-size: 14px;
+            background-color: transparent;
+            border: none;
+            outline:none; /*Remove o contorno do campo quando nele é clicado */
+        }
+
+        ::-webkit-input-placeholder {
+            font-family: 'futura-lt-book';
+            color: rgba(255, 255, 255, 0.664);
+        }
+
+        .busca button {
+            width: 13px;
+            height: 14px;
+            position: relative;
+            margin-right: 7px;
+            top: 3px;
+            background-image: url(imagens/gr_lupaBusca.png);
+            background-color: rgba(255, 255, 255, 0);
+            background-repeat: no-repeat;
+            border: none;
+        }
+
+       
+
+        .nav-four{
+            
+            position: absolute;
+            top: 80px;
+            right: 5%;
+        }
+
+        
+
+        
+
         .foto-auxilio-2021 {
             position: absolute;
             right: 5%;
@@ -130,61 +270,95 @@
     </style>
 </head>
 
-<body link = "#fff" vlink = "#fff"> <!--Muda a cor do link e a cor dele pós visita.-->
+<body link = "#fff" vlink = "#fff" alink = "#fff"> <!--Muda a cor do link, a cor dele pós visita e a cor dele quando é selecionado-->
     <header class="menu">
         <img src="imagens/auxilio_2021.png"class = "foto-auxilio-2021" alt="Auxílio Emergencial 2021">
 
         <nav class = "nav-main" >
+            <div class="logo" >
+                <img src="imagens/novaLogoInternas.png" alt="">
+            </div>
 
-            <nav class = "nav-one" >
+            <nav class = "nav-one" >              
                 <ul class="nav-list1" >
                     <li>
                         <span class = "divisor"></span>
-                        <strong><a href="">Você</a></strong> 
+                        <strong><a href="" title="Você" >Você</a></strong> 
                         <span class = "divisor"></span>
                     </li>
                     <li>
-                        <strong><a href="">Empresa</a></strong>
+                        <strong><a href="" title="Empresa" >Empresa</a></strong>
                         <span class = "divisor-esp"></span>
                     </li>
                     <li>
-                        <strong><a href="">Investimentos</a></strong>           
+                        <strong><a href="" title="Investimentos" >Investimentos</a></strong>           
                         <span class = "divisor-esp"></span>
                     </li>
                     <li>
-                        <strong><a href="">Open Banking</a></strong>      
+                        <strong><a href="" title = "Open Banking" >Open Banking</a></strong>      
                         <span class = "divisor-esp"></span>
                     </li>
                 </ul>
-                <ul class = "nav-list2" >
-                    <li> <a href="">Transferência</a> </li>
-                    <li> <a href="">Downloads</a> </li>
-                    <li> <a href="">Sobre a CAIXA</a></li>
-                    <li> <a href="">RI</a></li>
-                    <li> <a href="">/EN</a></li>
-                </ul>
-                <ul  class = "nav-list3" >
-                    <li><a href="" class="caixa-libra" ></a></li>
-                    <li><a href="" class="caixa-integrado" ></a></li>
-                    <li><a href="" class="caixa-info"></a></li>
-                </ul>
-
-
+              
             </nav>
-
+            
             <nav class = "nav-two" >
 
+                <ul class = "nav-list2" >
+                    <li> <a class="teste" href="" title="Transparência" >Transparência</a> </li>
+                    <li> <a href="" title="Downloads">Downloads</a> </li>
+                    <li> <a href="" title="Sobre a CAIXA" >Sobre a CAIXA</a></li>   
+                    <li class = "RI-corrigir"><a href="" title="RI">RI</a></li>
+                    <li class = "EN-corrigir"><a href="" title="EN" >/EN</a></li>                            
+                </ul>
+
+                <ul class="nav-list3" >
+                    <li class="img-nav" ><a href="" class="caixa-libra" title="Tradutor de libras"  ><img src="imagens/libras.png" alt="Sinais de libras"></a></li> 
+
+                    <li class="img-nav"  ><a href="" class="caixa-integrado" title="Integridade CAIXA" ><img src="imagens/logo-integridade.png" alt="Logo CAIXA Integridade"></a></li>
+
+                    <li class="img-nav"  ><a href="" class="caixa-info" title="Acesso à informação"><img src="imagens/ainfohome.png" alt="Acesso a informação"></a></li>          
+                </ul>
+
+            </nav>
+            <nav class="nav-three">
+
+                <ul class = "nav-list4" >
+                    <li> <a class = "arrow" href="" title="Produtos" >Produtos</a></li>
+                    <li> <a class = "arrow" href="" title="Benefícios e Programas">Benefícios e Programas</a></li>
+                    <li> <a class = "arrow" href="" title="Atendimento">Atendimento</a></li>   
+                    <li> <a class = "bold" href="" title="Poder Público">Poder Público</a></li>                      
+                </ul>
+               
             </nav>
 
-            <div class = "login" >
+            <nav class="nav-four">
+                
 
-            </div>
+                <div class="busca">
+                    <button></button>
+                    <input type = "text" placeholder = "Busque na Caixa">
+                   
+
+                </div>
+
+                <div class = "login" >
+                    <a href="https://internetbanking.caixa.gov.br/sinbc/#!nb/login" title="Acessar minha conta"> 
+                        <img src="imagens/gr_acessoConta.png" alt="cadeado">
+                        Acessar minha conta    
+                    </a>
+                </div>
+
+
+            </nav>
+           
+       
 
         </nav>
 
         <div class="conteiner">
             <p class="breadcrumb" >
-                <span><a href="">Início</a></span>
+                <span><a href="" title="Caixa" >Início</a></span>
                 <span class = "separator" >›</span>
                 <span><a href="" >Auxílio Emergencial</a></span>
                 <span class = "separator" >›</span>

@@ -39,14 +39,23 @@
             background-size: cover; /*é o que faz o background ficar com width 100% */
             height: 460px;
         }
-        
 
+        .menu h1 {
+            font-weight: normal;  /*Configurando a fonte para ficar do jeito original. */
+            width: 60%;
+            font-size: 4.609rem; /*rem é bom para responsividade, pois é um tamanho acumulativo*/
+            letter-spacing:-.035em;    
+        }
+        
         .nav-main {
-            background-color: rgba(0, 255, 255, 0);
             height: 139px;
             margin-left: 113px;
-            width: 1714px;
-           
+            max-width: 1714px;
+        }
+
+        /*Iteração em todos os links do Header */
+        .sublinhado:hover{
+            border-bottom: 1px solid #ffffff;
         }
 
         .logo {
@@ -58,14 +67,10 @@
             position: relative;
             left: -6px;
             background-color: #0065b7;
-            width: 525px;
+            width: 41%;
             height: 100px;
             padding: 30px 0px 0px 0px;
         }
-
-
-       
-        
 
         .nav-list1 a {
             font-family: sans-serif;
@@ -76,12 +81,11 @@
             margin-left: 15px;
             margin-right: 15px;
             height: 18px;
-            border-left: 2px solid #f7941e;
-            
+            border-left: 2px solid #f7941e;          
         }
 
         .divisor-esp {
-            margin-left: 16px;
+            margin-left: 18px;
             margin-right:13px;
             height: 18px;
             border-left: 2px solid #f7941e;
@@ -130,16 +134,22 @@
             font-size: 16px;
             padding: 0px 0px 0px 30px;
             box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.212);
-            width: 565px;
+            width: 570px;
             height: 30px;  
         }
 
         .bold {
-            font-weight:bold
+            font-family: 'helvetica';
+            font-size: 16px;
+            font-weight: bold;
         }
 
         .nav-three a {
             opacity: 0.7;
+        }
+
+        .nav-three a:hover { 
+            border-bottom: 1px solid #ffffffbe;
         }
 
         .nav-three li {
@@ -147,8 +157,7 @@
             margin-right: 8px;
         }
 
-        .arrow::after{
-        
+        .arrow::after {     
             margin-left: 5px;
             width: 10px;
             height: 10px;
@@ -167,12 +176,7 @@
            height: 400px;           
        }
 
-        .menu h1 {
-            font-weight: normal;  /*Configurando a fonte para ficar do jeito original. */
-            width: 60%;
-            font-size: 4.609rem; /*rem é bom para responsividade, pois é um tamanho acumulativo*/
-            letter-spacing:-.035em;    
-        }
+      
 
         .separator {
             margin-left: 5px;
@@ -215,7 +219,7 @@
         .busca {
             border-bottom: 1px solid #ffffff;
             display: inline-block;
-            min-width: 284px;
+            width: 284px;
             border-radius: none;
             margin-right: 100px;
             padding: 0px 0px 10px 20px;
@@ -246,18 +250,11 @@
             border: none;
         }
 
-       
-
-        .nav-four{
-            
+        .nav-four{  
             position: absolute;
-            top: 80px;
+            top: 84px;
             right: 5%;
         }
-
-        
-
-        
 
         .foto-auxilio-2021 {
             position: absolute;
@@ -265,15 +262,196 @@
             top: 195px;
         }
 
-       
-    
+        .menu-responsive  {
+            margin-top: 30px;
+            margin-right: 24px;
+            font-family: "futura-lt-book", sans-serif;
+            font-size: 1.2rem;    
+            float: right;
+            visibility: hidden;
+            display: block;
+            width: 100px;
+            height: 30px;
+          
+        }
+
+        .menu-responsive span {
+            position: relative;
+            left: 55px;
+            bottom: 23px;
+            display: block;
+            width: 25px;
+            height: 5px;
+            border-bottom: 3px solid #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .conta, .logo-responsive {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+/*--------------------------------------RESPONSIVIDADE DO HEADER------------------------ */        
+        @media (max-width:1423px){
+            .menu {
+                height: 550px;
+            }
+
+            .conteiner {
+                margin-left: 15px;
+            }
+
+            .nav-list1 {
+                visibility: hidden;
+            }
+
+            .logo {
+                left: -38px;
+            }
+
+            .nav-three {
+                padding: 0;
+                width: 515px;
+                font-size: 15px;
+                left: -2;
+            }
+
+            .bold {
+                font-size: 15px;
+            }
+
+            .nav-main {
+               margin-left: 60px;
+            }
+
+            .busca {
+                width: 223px;
+                margin-right: 20px;
+            }
+
+            .responsive-right {
+                right: 1.5%;
+            }
+            
+        }
+
+        @media(max-width:1070px) {
+
+            .conteiner > h1 {
+                font-size: 3.252rem;
+            }
+
+        }
+
+        @media(max-width:1040px) {
+
+            .nav-two,.nav-three,.busca {
+                visibility: hidden;
+            }
+
+            .nav-four {
+                max-width: 1040px;
+            }
+
+            .login a{
+                position: absolute;
+                right: 80%;
+            }
+
+            .menu-responsive {
+                visibility: visible;
+            }
+             
+            .nav-one {
+                background-color:#0065b7;
+                height: 130px;
+            }
+        }
+
+        @media (max-width:600px) {
+
+            .logo, .login {
+                visibility: hidden;
+            }
+
+            .nav-one,.nav-main,.nav-list1,.nav-two, .nav-list2,.nav-list3,.nav-three,.nav-list4,.nav-four,.busca
+             {
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }          
+
+            .header-responsive {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 600px;
+                height: 70px;
+                background-color: #ffffff;
+            }
+
+            .menu-responsive {
+                margin-top: 6px;
+                margin-right: 0px;
+                color: #006bae;
+           }
+
+            .menu-responsive span {
+                border-bottom: 3px solid #006bae;
+            }
+
+            .conta {
+                padding: 20px 0px 0px 46px;
+                visibility: visible;
+                display: inline-block; 
+                background-color: #f7941e; 
+                width: 160px;        
+                height: 70px;
+            }
+
+            .conta::after {       
+                margin-left: 5px;
+                width: 20px;
+                height: 20px;
+                content: '';
+                display: inline-block;
+                background-image:url(imagens/cadeado.png) ;
+                background-repeat: no-repeat;
+            }
+
+            .logo-responsive {   
+                margin-left: 5px;
+                padding: 21px 0px 0px 0px;
+                visibility: visible;
+                width: 100px;
+                height: 70px;
+            }
+        }
+
     </style>
 </head>
 
 <body link = "#fff" vlink = "#fff" alink = "#fff"> <!--Muda a cor do link, a cor dele pós visita e a cor dele quando é selecionado-->
     <header class="menu">
-        <img src="imagens/auxilio_2021.png"class = "foto-auxilio-2021" alt="Auxílio Emergencial 2021">
+        <img src="imagens/auxilio_2021.png"class = "foto-auxilio-2021 responsive-right" alt="Auxílio Emergencial 2021">
+        <div class="header-responsive" >
+            <div class = "logo-responsive" >
+                <a href=""><img src="imagens/logocaixaresponsivo.png" alt=""></a>
+            </div>
 
+            <div class="conta">
+                <a href="" title="Conta">Conta</a>
+            </div>
+
+            <a href="" class="menu-responsive" title="Menu">Menu
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </div>
+          
         <nav class = "nav-main" >
             <div class="logo" >
                 <img src="imagens/novaLogoInternas.png" alt="">
@@ -283,63 +461,59 @@
                 <ul class="nav-list1" >
                     <li>
                         <span class = "divisor"></span>
-                        <strong><a href="" title="Você" >Você</a></strong> 
+                        <strong><a href="" title="Você" class="sublinhado" >Você</a></strong> 
                         <span class = "divisor"></span>
                     </li>
                     <li>
-                        <strong><a href="" title="Empresa" >Empresa</a></strong>
+                        <strong><a href="" title="Empresa" class="sublinhado" >Empresa</a></strong>
                         <span class = "divisor-esp"></span>
                     </li>
                     <li>
-                        <strong><a href="" title="Investimentos" >Investimentos</a></strong>           
+                        <strong><a href="" title="Investimentos" class="sublinhado">Investimentos</a></strong>           
                         <span class = "divisor-esp"></span>
                     </li>
                     <li>
-                        <strong><a href="" title = "Open Banking" >Open Banking</a></strong>      
+                        <strong><a href=""title="Open Banking"class="sublinhado">Open Banking</a></strong>      
                         <span class = "divisor-esp"></span>
                     </li>
                 </ul>
               
             </nav>
             
-            <nav class = "nav-two" >
+            <nav class = "nav-two responsive-right" >
 
                 <ul class = "nav-list2" >
-                    <li> <a class="teste" href="" title="Transparência" >Transparência</a> </li>
-                    <li> <a href="" title="Downloads">Downloads</a> </li>
-                    <li> <a href="" title="Sobre a CAIXA" >Sobre a CAIXA</a></li>   
-                    <li class = "RI-corrigir"><a href="" title="RI">RI</a></li>
-                    <li class = "EN-corrigir"><a href="" title="EN" >/EN</a></li>                            
+                    <li> <a href="" title="Transparência" class="sublinhado" >Transparência</a> </li>
+                    <li> <a href="" title="Downloads" class="sublinhado">Downloads</a> </li>
+                    <li> <a href="" title="Sobre a CAIXA" class="sublinhado">Sobre a CAIXA</a></li>   
+                    <li class = "RI-corrigir"><a href="" title="RI" class="sublinhado">RI</a></li>
+                    <li class = "EN-corrigir"><a href="" title="EN" class="sublinhado" >/EN</a></li>                            
                 </ul>
 
                 <ul class="nav-list3" >
-                    <li class="img-nav" ><a href="" class="caixa-libra" title="Tradutor de libras"  ><img src="imagens/libras.png" alt="Sinais de libras"></a></li> 
+                    <li class="img-nav caixa-libra sublinhado" ><a href="" title="Tradutor de libras"><img src="imagens/libras.png" alt="Sinais de libras"></a></li> 
 
-                    <li class="img-nav"  ><a href="" class="caixa-integrado" title="Integridade CAIXA" ><img src="imagens/logo-integridade.png" alt="Logo CAIXA Integridade"></a></li>
+                    <li class="img-nav sublinhado caixa-integrado"><a href="" title="Integridade CAIXA" ><img src="imagens/logo-integridade.png" alt="Logo CAIXA Integridade"></a></li>
 
-                    <li class="img-nav"  ><a href="" class="caixa-info" title="Acesso à informação"><img src="imagens/ainfohome.png" alt="Acesso a informação"></a></li>          
+                    <li class="img-nav sublinhado caixa-info"  ><a href=""title="Acesso à informação" ><img src="imagens/ainfohome.png" alt="Acesso a informação"></a></li>          
                 </ul>
 
             </nav>
             <nav class="nav-three">
 
                 <ul class = "nav-list4" >
-                    <li> <a class = "arrow" href="" title="Produtos" >Produtos</a></li>
-                    <li> <a class = "arrow" href="" title="Benefícios e Programas">Benefícios e Programas</a></li>
-                    <li> <a class = "arrow" href="" title="Atendimento">Atendimento</a></li>   
-                    <li> <a class = "bold" href="" title="Poder Público">Poder Público</a></li>                      
+                    <li> <a class = "arrow" href="" title="Produtos" class="sublinhado" >Produtos</a></li>
+                    <li> <a class = "arrow" href="" title="Benefícios e Programas" class="sublinhado">Benefícios e Programas</a></li>
+                    <li> <a class = "arrow" href="" title="Atendimento" class="sublinhado">Atendimento</a></li>   
+                    <li> <a class = "bold" href="" title="Poder Público" class="sublinhado">Poder Público</a></li>                      
                 </ul>
                
             </nav>
 
-            <nav class="nav-four">
-                
-
+            <nav class="nav-four responsive-right">
                 <div class="busca">
                     <button></button>
                     <input type = "text" placeholder = "Busque na Caixa">
-                   
-
                 </div>
 
                 <div class = "login" >
@@ -358,9 +532,9 @@
 
         <div class="conteiner">
             <p class="breadcrumb" >
-                <span><a href="" title="Caixa" >Início</a></span>
+                <span><a href="" title="Caixa" class="sublinhado">Início</a></span>
                 <span class = "separator" >›</span>
-                <span><a href="" >Auxílio Emergencial</a></span>
+                <span><a href="" class="sublinhado" >Auxílio Emergencial</a></span>
                 <span class = "separator" >›</span>
                 <span>Auxílio Emergencial 2021</span>
             </p>

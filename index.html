@@ -30,6 +30,12 @@
         }
 
         @font-face {  /*Fonte externa.*/
+            font-family: 'helveticfutura';
+            src: url('NewHelvetica-Regular.otf') format("opentype");
+            font-style: normal;
+        }
+
+        @font-face {  /*Fonte externa.*/
             font-family: 'futura-lt-book';
             src: url('FuturaLT-Book.ttf') format('truetype');
             font-style: normal;
@@ -335,11 +341,17 @@
             max-width: 1400px;
         }
 
+/*--------------------------------- SEÇÃO CONTENT ----------------------------------------- */
+
         .content h2 {
             margin-bottom: 38px;
             font-family: 'futura-lt-bold';   
             font-size: 46px;
             color:#0066b3 ;
+        }
+
+        .content-div-5 h2 {
+            width: 90%;
         }
 
         .content p {
@@ -362,48 +374,9 @@
 
         .content div {
             width: 100%;
-            padding: 40px 111px 40px 111px;
+            max-height:  1820px;
+            padding: 40px 7% 40px 7%;
             border-bottom: 1px solid #c8cbd4;
-        }
-
-        .content-div-1 {
-            height: 343px;         
-        }
-
-        .content-div-2 {
-            height:274px;
-        }
-
-        .content-div-3 {
-            height: 1207px;
-        }
-
-        .content-div-4 {
-            height: 336px;
-        }
-
-        .content-div-5 {
-            height: 375px;
-        }
-
-        .content-div-6 {
-            height: 275px;
-        }
-
-        .content-div-7 {
-            height: 313px;
-        }
-
-        .content-div-8 {
-            height: 235px;
-        }
-
-        .content-div-9 {
-            height: 221px;
-        }
-
-        .content-div-10 {
-            height: 268px;
         }
 
         .content li > p::before {
@@ -475,31 +448,27 @@
 /* --------------------- ----------- SEÇÃO auxílio-services -------------------------------- */
 
         .auxilio-services {
-            padding: 0 80px;
+            padding: 100px 80px;
             justify-content: space-around;
             display: flex;
             align-items: center;
             font-family: 'futura-lt-book';
             width: 100%;
-            height: 500px;
             text-align: center;    
         }
 
         .auxilio-services div{ 
-         
             display: inline-block;
             width: 538px;
             margin: 0 20px;
-            height: 350px;
-           
-
+            max-height: 350px;
         }
 
         .tutorial-auxilio img {
            width: 222px;
         }
 
-        .see-more {
+        .see-more { 
             font-family: "futura-lt-bold";
             color: #ff7200;
             font-weight: bold; 
@@ -509,6 +478,7 @@
             font-family: "futura-lt-bold";
             font-weight: bold;
             font-size: 24.3px;
+            color: #1f2a47;;
         }
 
         .phrase-auxilio-services {
@@ -519,13 +489,101 @@
 
 
 /*---------------------------- SEÇÃO APP-AUXILIO-EMERGENCIAL-INFO ------------------------ */
+ 
+       
 
         .app-auxilio-emergencial-info {
             background-color: #0065b7;
-            height: 600px;
+            padding: 40px 6%;
+            max-height: 650px;
+            color: #fff;
+            font-family: "futura-lt-book";
         }
 
-      
+        .app-auxilio-emergencial-info h2{
+            font-size: 46px;
+            margin-bottom:10px ;
+            font-family: "futura-lt-bold";
+        }
+
+        .app-auxilio-emergencial-info p {
+            margin: 35px 0px 0px 0px;
+        }
+
+        .download-apps {
+            margin: 80px 0px 0px 0px;
+            display: inline-block;
+            width: 45%;
+        }
+
+        .app-auxilio-responsive {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-store a {
+            display: block;   
+            padding: 7px 0px 0px 5px;
+            width: 260px;
+            height: 38px;
+            border: 1px solid #68b7c8;
+            border-radius: 3px;
+            box-shadow: 0px 1.7px rgba(0, 0, 0, 0.096);
+        }
+
+        .play-store {
+            margin-bottom: 36px;
+        }
+
+        .play-store a::before {
+            content: "";
+            display: inline-block;
+            background-image: url(imagens/f17b-icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0px 15px;
+            width: 11px;
+            height: 15px;
+        }
+
+        .app-store a::before {
+            content: "";
+            display: inline-block;
+            background-image: url(imagens/apple\ png\ icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0px 15px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .box-image {
+            width: 45%;
+        }
+
+        .app-auxilio-emergencial-info img{
+            height: 460px;
+            width: 460px;
+            display: inline-block ;
+
+        }
+
+        .top-link-two  {
+            visibility: hidden;
+            position: absolute;
+            right: 17px;
+            font-size: 17.5px;
+            color: #ffffff;
+    
+        }
+
+        .top-link-two::before {
+            content: "▲";
+            display: inline-block;
+            font-size: 0.7rem;
+            margin: 0px 8px;
+        }
+
 /*--------------------------------------RESPONSIVIDADE-------------------------------- */        
         @media (max-width:1423px){
 
@@ -566,7 +624,11 @@
             }
 
             .auxilio-services {
-                padding: 0 20px;
+                padding: 100px 20px;
+            }
+
+            .app-auxilio-emergencial-info {
+                padding: 40px 8px;
             }
             
         }
@@ -588,6 +650,8 @@
             }
         }
 
+       
+
         @media(max-width:1070px) {
 
             .menu {
@@ -603,7 +667,28 @@
                 font-size: 3.252rem;
             }
 
+           
+
+          
+
+           
+
         }
+
+        @media(max-width:1030px) {
+
+            .box-image img {
+                width: 99%;
+                height: 99%;
+            }
+
+            .app-auxilio-emergencial-info p {
+                width: 50%;
+            }
+
+        }
+
+        
 
         @media (max-width:933px) {
             .menu {
@@ -613,9 +698,12 @@
             .conteiner {
                 height: 296px;
             }
+
+           
         }
 
         @media (max-width:669px) {
+
             .menu {
                 height: 550px ;
             }
@@ -626,24 +714,21 @@
 
             .auxilio-services  {
                 padding: 0 0px;
-                height: 850px;
+                max-height: 1050px;
+                height: 100%;
                 display: block;
             }
 
             .auxilio-services div {
                 margin: 0px 0px;
-                padding: 100px 0px 0px 15px;
+                padding: 100px 0px 20px 10px;   
                 width: 100%;
-                height: 250px;
                 border-bottom: 1px solid #c8cbd4;
             }
 
-            .tutorial-auxilio {
-                border-bottom:none !important;
-            }
-
-            .title-auxilio-services {
-                font-size: 22px;
+            .see-more {
+                display: block;
+                margin-bottom: 20px;
             }
 
             .auxilio-services img {
@@ -651,6 +736,21 @@
                 margin-right: 10px;
                 margin-bottom:32px ;
             }
+
+            .tutorial-auxilio img {
+                margin-right: 0px !important;
+            }
+
+            .tutorial-auxilio {              
+                border-bottom: none !important; 
+                padding: 100px 0px 100px 3px !important;
+            }
+
+            .phrase-auxilio-services {
+                padding: 0px 5px 0px 0px;
+            }
+
+            
         
         }
 
@@ -679,54 +779,15 @@
                 height: 130px;
             }
 
-            .content .content-div-1 {
-                height: 410px;
-            }
-
-            .content .content-div-2 {
-                height:  300px;
-            }
-
-            .content .content-div-3 {
-                height: 100%;
-                max-height:  1820px;
-
-            }
-            
-            .content .content-div-4 {
-                height:  430px;
-            }
-
-            .content .content-div-5 {
-                height:  100%;
-                max-height: 520px;
-            }
-
-            .content .content-div-6 {
-                height:  100%;
-                height:  345px;
-
-            }
-
-            .content .content-div-7 {
-                height:  100%;
-                height:  400px;
-
-            }
-
-            .content .content-div-8 {
-                height:  100%;
-                height:  255px;
-
-            }
-
             .auxilio-services img {
-                width: 100px;
-
+                width: 95px;
             }
 
-            .auxilio-services {
-                
+            .tutorial-auxilio img {
+                width: 100px !important;
+            }
+
+            .auxilio-services {    
                 text-align: left;
             }
 
@@ -849,6 +910,28 @@
             .top-link {
                 visibility: visible;
             }
+
+            .app-auxilio-emergencial-info h2 {
+                font-size: 31px;
+                width: 85%;
+            }
+
+            .app-auxilio-emergencial-info p {
+                width: 90%;
+            }
+
+            .download-apps {
+                margin: 40px 0px 0px 0px;
+            }
+
+            .app-auxilio-emergencial-info img {
+                visibility: hidden;
+            }
+
+            .top-link-two {
+                visibility: visible;
+            }
+
         }
 
     </style>
@@ -1158,7 +1241,19 @@
     </section>
 
     <section class="app-auxilio-emergencial-info" >
-
+        <a class="top-link-two" href="#begin">Topo</a>
+        <h2>App Auxílio Emergencial</h2>
+        <p>Para consultar as informações sobre o Auxílio Emergencial 2021.</p>
+        <div class="app-auxilio-responsive" >
+            <div class = "download-apps" >
+                <div class="play-store button-store"><a href="">Baixa na Play Store</a></div>
+                <div class="app-store button-store"><a href="">Baixa na App Store</a></div> 
+            </div>
+            <div class = "box-image" >
+                <img src="imagens/icone_app_auxilioemergencial_versao_09-04-200x200.png" alt="">
+            </div>
+        </div>
+       
     </section>
     
 </body>

@@ -19,19 +19,12 @@
         }
 
         li {
-            display: inline-block;
-            
+            display: inline-block;    
         }
 
         @font-face {  /*Fonte externa.*/
             font-family: 'futura-lt-bold';
             src: url('futura-bold-bt.ttf') format('truetype');
-            font-style: normal;
-        }
-
-        @font-face {  /*Fonte externa.*/
-            font-family: 'helveticfutura';
-            src: url('NewHelvetica-Regular.otf') format("opentype");
             font-style: normal;
         }
 
@@ -47,19 +40,22 @@
             background-color: rgb(255, 255, 255);
         }
 
+/*-------------------------------------HEADER-------------------------------------------------- */
+
         .menu {
             font-family: 'futura-lt-book';
             color: #fff;
             background-image: url(imagens/bg_institucionalInterno.jpg);
             background-repeat: no-repeat;
             width: 100%;
-            background-size: 100% 450px; /*é o que faz o background ficar com width 100% */
-            height: 450px;
+            background-size: 100% 600px; /*é o que faz o background ficar com width 100% */
+            max-height: 600px;
+            min-height: 428px;
         }
 
         .menu h1 {
             font-weight: normal;  /*Configurando a fonte para ficar do jeito original. */
-            width: 60%;
+            width: 62.5%;
             font-size: 4.609rem; /*rem é bom para responsividade, pois é um tamanho acumulativo*/
             letter-spacing:-.035em;    
         }
@@ -187,13 +183,9 @@
         }
 
         .conteiner {      
-           margin-left: 120px;
-           position: relative;  
-           top: 55px;
-           height: 256px;           
-       }
-
-      
+            padding: 50px 6%; 
+            max-height: 550px !important;
+        }
 
         .separator {
             margin-left: 5px;
@@ -201,15 +193,13 @@
         }
 
         .breadcrumb {
-            padding: 0px 0px 10px 0px
-            
+            padding: 0px 0px 10px 0px  
         }
 
         .description { 
             font-size: 1.2rem;
             width: 40%;
             min-width: 324px;
-          
         }
 
         .login {
@@ -290,7 +280,6 @@
             display: block;
             width: 100px;
             height: 30px;
-          
         }
 
         .menu-responsive span {
@@ -311,14 +300,13 @@
         }
 
         .box-fixed {    
-            padding: 30px 114px 30px 114px;  
+            padding: 30px 6%;
             background-color: #fff;
             width: 100%;
             min-height: 117px;
             max-height: 376px;
-            border-bottom: 1px solid #c8cbd4;
-           
-      }  
+            border-bottom: 1px solid #c8cbd4;          
+        }  
 
         .box-fixed a {
             margin-right: 2.5em;
@@ -333,8 +321,7 @@
         }
 
         .paragrafo {
-            margin-left: 100px;
-           
+            margin-left: 100px;  
         }
 
         .box-fixed ul {
@@ -355,7 +342,7 @@
         }
 
         .content p {
-            font-family: sans-serif; /*Não conseguir mudar para helveticregular */
+            font-family: sans-serif; 
             color: #4C556C;
             font-size: 16px;
             max-width: 900px;
@@ -390,16 +377,14 @@
 
         .content .saiba-mais {
             padding: 7px 111px 0px 0px;
-            border: none;
-           
+            border: none;    
         }
 
         .content-div-9 a{
             color: #006bae;
         }
 
-        .saiba-mais a {
-            
+        .saiba-mais a {    
             display: block;
             width: 150px;
             height: 46px;
@@ -426,7 +411,6 @@
             background: linear-gradient(to bottom, rgb(2, 80, 129) 0%,rgb(2, 80, 129) 100%);
         }
 
-      
         .top-link  {
             font-family: 'futura-lt-book';
             position: absolute;
@@ -435,7 +419,6 @@
             font-size: 17.5px;
             color: #1c62aa;
             visibility: hidden;
-
         }
 
         .top-link::before {
@@ -487,11 +470,8 @@
             margin: 10px 0;
         }
 
-
 /*---------------------------- SEÇÃO APP-AUXILIO-EMERGENCIAL-INFO ------------------------ */
  
-       
-
         .app-auxilio-emergencial-info {
             background-color: #0065b7;
             padding: 40px 6%;
@@ -565,7 +545,6 @@
             height: 460px;
             width: 460px;
             display: inline-block ;
-
         }
 
         .top-link-two  {
@@ -574,7 +553,6 @@
             right: 17px;
             font-size: 17.5px;
             color: #ffffff;
-    
         }
 
         .top-link-two::before {
@@ -584,11 +562,185 @@
             margin: 0px 8px;
         }
 
+/*--------------------------------SEÇÃO CANAIS-ATENDIMENTO------------------------------------ */
+
+        .canais-atendimentos {
+            padding: 40px 6%;
+            max-height: 528px;
+            border-bottom: 1px solid #c8cbd4;
+        }
+        
+        .canais-atendimentos h2 {
+            font-size: 46px;
+            color: #0066b3;
+            font-family: "futura-lt-bold";
+        }
+
+        .canais-atendimentos-responsive {
+            font-family: "futura-lt-book";
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #d3d6e2;
+        }
+
+        .canais-atendimentos-responsive div {
+            padding: 50px 20px 20px 20px;
+            display: inline-block;
+            line-height: 1.8rem;
+            text-align: center;
+            width: 25.77%;
+            min-height: 270px;
+        }
+
+        .box-1 {
+            border-right:  1px solid #d3d6e2;
+        }
+
+        .box-2 {
+            border-right:  1px solid #d3d6e2;
+        }
+
+        .box-3 {
+            border-right:  1px solid #d3d6e2;
+        }
+
+        .canais-atendimentos-responsive a {
+            display: block;
+        }
+
+        .canais-atendimentos h3 {
+            font-weight: 300;
+            color: #1F2A47;
+        }
+
+        .canais-atendimentos span {      
+            color: #4c546d;
+        }
+
+        .box-celular img{
+            width: 53px;
+        }
+
+        .canais-atendimentos-responsive img {
+            margin: 15px 0;
+        }
+
+/*-----------------------------------RODA PÉ(comunicacao)----------------------------------*/
+        footer {
+            padding: 120px 6% 0px 6%;
+        }
+
+        .comunicacao {
+            font-family: helvetica; 
+        }
+
+        .comunicacao a {
+            color: #616971;
+        }
+
+        .row-1 {
+            display: flex;
+        }
+
+        .row-1 ul {
+            margin-right: 10px;
+            width: 403px;
+        }
+
+        .row-1 li {
+            display: block;
+        }
+
+        .telefone {
+            display: inline-block;
+            line-height: 1.9rem;
+        }
+
+        .telefone li {
+            margin-bottom: 16px;
+        }
+
+        .phone {
+            font-family: "futura-lt-book";
+            font-size: 21px;
+            color: #0066b3;
+        }
+
+        .setor {
+            color:#abb0b4;
+        }
+
+        .canais {
+            min-height: 232px;
+            display: inline-block;
+            font-family: helvetica;
+            font-size: 16px;
+        }
+
+        .canais > li {
+            line-height: 2.0rem;
+            margin-bottom: 10px;
+        }
+
+        .canais-more > li {
+            line-height: 2.0rem;
+            margin-bottom: 10px;
+        }
+
+        .redes-socias a { 
+            align-items: center;
+            line-height: 2.0rem;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .redes-socias img {
+            display: inline-block;
+            height: 20px;
+            margin-right: 6px;
+        }
+
+        .youtube img {
+            height: 22px;
+            margin-right: 5px;
+        }
+
+        .instagram img {
+            height: 16px;
+            margin-right: 10px;
+            margin-left: 3px;
+        }
+
+        .comunicacao a:hover { 
+            border-bottom: 1px solid #c8cbd49b;
+        }
+
+        .redes-socias a:hover { 
+            border-bottom:none;
+        }
+
+        .row-2 {   
+            font-size: 15px;
+            display: flex;
+            justify-content:center;
+            background-color: #f3f8f891;
+            padding: 80px 0px 50px 0px;
+        }
+
+        .row-2 li {
+            margin: 20px 10px;
+        }
+
 /*--------------------------------------RESPONSIVIDADE-------------------------------- */        
         @media (max-width:1423px){
 
             .conteiner {
-                margin-left: 15px;
+                padding: 50px 20px; 
+            }
+
+            .conteiner h1 {
+                line-height: 1.2em;
             }
 
             .nav-list1 {
@@ -626,53 +778,75 @@
             .auxilio-services {
                 padding: 100px 20px;
             }
-
-            .app-auxilio-emergencial-info {
-                padding: 40px 8px;
-            }
-            
         }
 
         @media(max-width:1317px) {
-            .conteiner {
-                height: 356px;
-            }
-
-
-            .menu {
-                background-size: 100% 600px;
-                height: 550px;
-            }
 
             .content div{
                 padding: 40px 40px 40px 20px;
+            }
 
+            .app-auxilio-emergencial-info {
+                padding: 40px 13px;
+            }
+
+            .canais-atendimentos {
+                padding: 40px 20px;
+            }
+
+            footer {
+                padding: 80px 20px 0px 20px;
             }
         }
 
-       
-
         @media(max-width:1070px) {
-
-            .menu {
-                height: 390px;
-            }
-
-            .conteiner {
-                top:25px;
-                height: 226px;
-            }
 
             .conteiner > h1 {
                 font-size: 3.252rem;
             }
 
-           
+            .canais-atendimentos-responsive  {
+                align-items: center;
+                flex-wrap: wrap;
+            }
 
-          
+            .canais-atendimentos-responsive div  {
+                padding: 20px 10px 0px 20px;
+                text-align: left;
+                width: 50%;
+                min-height: 135px;
+                max-height: 154px;
+            }
 
-           
+            .box-1 {
+                border-bottom: 1px solid #d3d6e2 ;
+            }
 
+            .box-2 {
+                border-bottom: 1px solid #d3d6e2;
+                border-right: none;
+            }
+
+            .box-celular img{
+                width: 34px;
+                height: 35px;
+            }
+
+            .box-2 img {
+                width: 34px;
+                height: 40px;
+            }
+
+            .box-4 img {
+                width: 34px;
+                height: 44px;
+            }
+
+            .canais-atendimentos-responsive img  {
+                margin-right: 20px;
+                margin-bottom: 35px;
+                float: left;
+            }
         }
 
         @media(max-width:1030px) {
@@ -684,34 +858,15 @@
 
             .app-auxilio-emergencial-info p {
                 width: 50%;
+                
             }
 
-        }
-
-        
-
-        @media (max-width:933px) {
-            .menu {
-                height: 460px ;
+            .row-2 {
+                flex-wrap: wrap;
             }
-
-            .conteiner {
-                height: 296px;
-            }
-
-           
         }
 
         @media (max-width:669px) {
-
-            .menu {
-                height: 550px ;
-            }
-
-            .conteiner {
-                height: 386px;
-            }
-
             .auxilio-services  {
                 padding: 0 0px;
                 max-height: 1050px;
@@ -749,11 +904,8 @@
             .phrase-auxilio-services {
                 padding: 0px 5px 0px 0px;
             }
-
-            
-        
         }
-
+        
         @media(max-width:1040px) {
 
             .nav-two,.nav-three,.busca {
@@ -790,8 +942,6 @@
             .auxilio-services {    
                 text-align: left;
             }
-
-           
         }
 
         @media (max-width:600px) {
@@ -817,9 +967,6 @@
                 margin-bottom: 30px;
             }
 
-            .conteiner {
-                height: 373px;
-            }
 
             .conteiner h1 {
                 font-size: 2.5rem;
@@ -835,15 +982,19 @@
                 line-height:30px
             }
 
+            .conteiner {
+                padding: 35px 20px; 
+            }
+
+            .menu {
+                min-height: 500px;
+            }
+
             .menu > img {
                 width: 300px;
                 height: 120px;
                 top: 330px;
                 right: 19%;
-            }
-
-            .menu {
-                height: 500px;
             }
 
             .menu-responsive {
@@ -932,6 +1083,47 @@
                 visibility: visible;
             }
 
+            .canais-atendimentos h2 {
+                font-size: 31px;
+            }
+
+            .canais-atendimentos-responsive {
+                border: none;
+            }
+
+            .canais-atendimentos-responsive div {
+                padding: 0;
+                width: 100%;
+                min-height: 97px;
+                border: none;
+            }
+
+            .canais-atendimentos-responsive img {
+                margin-bottom: 0;
+            }
+
+            .row-1 {
+                flex-wrap: wrap;
+            }
+
+            .row-1 ul {
+                margin-bottom: 30px;
+            }
+
+            .row-1 .redes-socias {
+                margin-bottom: 20px;
+            }
+
+            .row-2 { 
+                min-height: 280px;
+                padding: 40px 0px 20px 0px;
+                display: block;
+            }
+
+            .row-2 li {
+                display: block;
+                margin: 20px 0px;
+            }
         }
 
     </style>
@@ -1255,6 +1447,140 @@
         </div>
        
     </section>
+
+    <section class = "canais-atendimentos" >
+        <h2>Canais de Atendimento</h2>
+        <div class = "canais-atendimentos-responsive" >
+            <div class = "box-1 box-celular" >
+                <a href="">
+                    <img src="imagens/celular_01.png" alt="">
+                    <h3>Baixe o App CAIXA Tem</h3>
+                    <span>Acesse diversos serviços pelo aplicativo</span>
+                </a>
+
+            </div>
+            <div class = "box-2" >
+                <a href="">
+                    <img src="imagens/03-ico-vantagens-06-e_para_todo_mundo.png" alt="">
+                    <h3>Aplicativos da CAIXA</h3>
+                    <span>Conheça</span>
+                </a>
+
+            </div>
+            <div class = "box-3 box-celular" >
+                <a href="">
+                    <img src="imagens/celular_01.png" alt="">
+                    <h3>Baixe o App Bolsa Família</h3>
+                    <span>Acompanhe o pagamento do benefício</span>
+                </a>
+
+            </div>
+            <div class = "box-4" >
+                <a href="">
+                    <img src="imagens/icon-ligue.png" alt="">
+                    <h3>Consulte os telefones da CAIXA</h3>
+                    <span>Saiba mais</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <section class = "comunicacao">
+
+            <div class="row-1" >
+                <ul class = "telefone" >
+                    <li>
+                        <p>
+                            <span class="phone">0800 104 0 104</span>
+                            <br>
+                            <span class="setor">Atendimento CAIXA</span>
+                        </p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <span class="phone">0800 726 0207</span>
+                            <br>
+                            <span class="setor">Atendimento CAIXA Cidadão</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="phone">0800 726 0101</span>
+                            <br>
+                            <span class="setor">SAC</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="phone">0800 725 7474</span>
+                            <br>
+                            <span class="setor">Ouvidoria</span>
+                        </p>
+                    </li>
+                </ul>
+                <ul class = "canais" >
+                    <li><a href="">Canais Digitais</a></li>
+                    <li><a href="">Aplicativos</a></li>
+                    <li><a href="">Todos os telefones</a></li>
+                    <li><a href="">Deficiente auditivo</a></li>
+                    <li><a href="">Encontre uma agência</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                </ul>
+                <ul class = "canais-more">
+                    <li><a href="">Sobre a CAIXA</a></li>
+                    <li><a href="">Trabalhe na CAIXA</a></li>
+                    <li><a href="">Canal de Denúncia</a></li>
+                    <li><a href="">CAIXA de A - Z</a></li>
+                    <li><a href="">Promoções</a></li>
+                </ul>
+                <ul class = "redes-socias">
+                    
+                    <li>
+                        <a class="twitter" href="">
+                            <img src="imagens/twitter.png" alt="">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a class="facebook" href="">
+                            <img src="imagens/face.png" alt="">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="">
+                            <img src="imagens/youtube.png" alt="">
+                            Youtube
+                        </a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="">
+                            <img src="imagens/insta.png" alt="">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-2" >
+                <ul class="another-1">
+                    <li><a href="">Ouvidoria</a></li>
+                    <li><a href="">Aviso de privacidade</a></li>
+                    <li><a href="">Termos de uso</a></li>
+                </ul>
+
+                <ul class="another-2">
+                    <li><a href="">Segurança</a></li>
+                    <li><a href="">CAIXA Notícias</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </footer>
     
 </body>
 </html>

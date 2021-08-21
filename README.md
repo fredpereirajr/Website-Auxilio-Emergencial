@@ -1,2 +1,2 @@
 # Website-Auxilio-Emergencial
-Criação do site do auxílio emergencial, um programa social do governo federal brasileiro.
+Criação do site do auxílio emergencial, um programa social do governo federal brasileiro, utilizando CSS E HTML
